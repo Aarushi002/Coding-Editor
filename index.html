@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4a557582c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="head">
+                <div>
+                    <label><i class="fa-brands fa-html5"></i>HTML</label></div>
+                <div>
+                    <button onclick="myFunctionhtml()"><i class="fa-solid fa-copy"></i></button>
+                    <button onclick="savehtml()" id="saveButtonhtml"><i class="fa-solid fa-download"></i></button>
+                    <button  id="lockBtn1"><i class="fa-solid fa-lock"></i></button>
+                </div>
+            </div>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            
+
+            <div class="head">
+                <div>            
+                    <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                </div>
+                <div>
+                    <button onclick="myFunctioncss()"><i class="fa-solid fa-copy"></i></button>
+                    <button onclick="savecss()" id="saveButtoncss"><i class="fa-solid fa-download"></i></button>
+                    <button  id="lockBtn2"><i class="fa-solid fa-lock"></i></button>
+                </div>
+            </div>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            
+
+            <div class="head">
+                <div>            
+                    <label><i class="fa-brands fa-square-js"></i>JavaScript</label>
+                </div>
+                <div>
+                    <button onclick="myFunctionjs()"><i class="fa-solid fa-copy"></i></button>
+                    <button onclick="savejs()" id="saveButtonjs"><i class="fa-solid fa-download"></i></button>
+                    <button  id="lockBtn3"><i class="fa-solid fa-lock"></i></button>
+                </div>
+            </div>
+            
+            <textarea id="js-code" onkeyup="run()"></textarea>
+           
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+    
+</body>
+</html>
